@@ -37,7 +37,7 @@ If size of _value_ is bigger than the pointed object, a MemoryError will be rais
 pyptrs.**dereference**(pointer, *value, force_write = False)
 
 If _value_ is not given, it just dereferences the pointer. 
-If _value_ is given, it must be a single argument and it dereferences the pointed object and assigns _value_ to it then returns a _backup_id_ that can be passed to ptrs.mem_restore(). 
+If _value_ is given, it must be a single argument and it dereferences the pointed object and assigns _value_ to it then returns a _backup_id_ that can be passed to pyptrs.mem_restore(). 
 If size of _value_ is bigger than the pointed object, a MemoryError will be raised. In order to prevent this, pass True to _force_write_.
 Type of value can be anything if the pointed object is a python object.
 If the type of the pointed object is a C type, type of _value_ must be the corresponding ctypes C data type.
@@ -63,4 +63,4 @@ Revert the changes done to memory by the function that returned _backup_id_.
 
 pyptrs.**mem_restore_last**()
 
-Revert the last change done to memory either by ptrs.dereference() or ptrs.mem_write().
+Revert the last change done to memory either by pyptrs.dereference() or pyptrs.mem_write().
