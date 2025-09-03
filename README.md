@@ -15,7 +15,8 @@ You can learn more information about these data types from [here](https://docs.p
 
 pyptrs.**pointer_to_address**(address, ctype = None)
 
-Return a pointer that points to the given _address_. If _ctype_ is None, a python object is assumed to be living in that address. Otherwise, _ctype_ must be ctypes C data type.
+Return a pointer that points to the given _address_. If _ctype_ is None, a python object is assumed to be living in that address. 
+Otherwise, _ctype_ must be the ctypes C data type corresponding to the type of the object living in _address_.
 You can learn more information about these data types from [here](https://docs.python.org/3/library/ctypes.html#fundamental-data-types), [here](https://docs.python.org/3/library/ctypes.html#arrays) and [here](https://docs.python.org/3/library/ctypes.html#structures-and-unions)
 
 # Pointer Objects
