@@ -9,7 +9,7 @@ You should never create pointers directly. Instead, use the functions below:
 
 pyptrs.**pointer_to_object**(obj, c_object = False)
 
-Return a pointer to _obj_. _c_object_ specifies whether to treat the obj as a python type or a C type.
+Return a pointer to _obj_. _c_object_ specifies whether to treat the obj as a python object or a C object.
 If _c_object_ is True, obj must be an instance of a ctypes C data type. 
 You can learn more information about these data types from [here](https://docs.python.org/3/library/ctypes.html#fundamental-data-types), [here](https://docs.python.org/3/library/ctypes.html#arrays) and [here](https://docs.python.org/3/library/ctypes.html#structures-and-unions)
 
