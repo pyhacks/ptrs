@@ -37,10 +37,10 @@ If size of _value_ is bigger than the pointed object, a MemoryError will be rais
 
 pyptrs.**dereference**(pointer, *value, force_write = False)
 
-If _value_ is not given, it just dereferences the pointer. 
+If _value_ is not given, it just dereferences the _pointer_. 
 If _value_ is given, it must be a single argument and it dereferences the pointed object and assigns _value_ to it then returns a _backup_id_ that can be passed to pyptrs.mem_restore(). 
 If size of _value_ is bigger than the pointed object, a MemoryError will be raised. In order to prevent this, pass True to _force_write_.
-Type of value can be anything if the pointed object is a python object.
+Type of _value_ can be anything if the pointed object is a python object.
 If the type of the pointed object is a C type, type of _value_ must be the corresponding ctypes C data type.
 
 pyptrs.**address_of**(obj, c_object = False)
