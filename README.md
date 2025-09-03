@@ -1,6 +1,9 @@
 # ptrs
 This library provides real pointers (as in languages like C) and some memory access utilites.
 
+# Installation
+```pip install ptrs```
+
 # Creating A Pointer
 You should never create pointers directly. Instead, use the functions below:
 
