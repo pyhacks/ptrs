@@ -30,7 +30,7 @@ Return a bytes object representing the pointed object.
 
 Pointer.**temp_value**(value, force_write = False)
 
-Dereference and assign _value_ to the pointed object, then return a context manager that reverts this assignment at exit.
+Return a context manager that dereferences and assigns _value_ to the pointed object at \_\_enter__ and reverts this assignment at \_\_exit__.
 If size of _value_ is bigger than the pointed object, a MemoryError will be raised. In order to prevent this, pass True to _force_write_.
 
 # Simulated Operators
