@@ -46,7 +46,7 @@ If the type of the pointed object is a C type, type of _value_ must be the corre
 pyptrs.**address_of**(obj, c_object = False)
 
 Return address of the _obj_. If _c_object_ is True type of _obj_ must be a ctypes C data type. 
-You can learn more information about these data types from [here](https://docs.python.org/3/library/ctypes.html#fundamental-data-types), [here](https://docs.python.org/3/library/ctypes.html#arrays) and [here](https://docs.python.org/3/library/ctypes.html#structures-and-unions)
+You can learn more information about these data types from [here](https://docs.python.org/3/library/ctypes.html#fundamental-data-types), [here](https://docs.python.org/3/library/ctypes.html#arrays) and [here](https://docs.python.org/3/library/ctypes.html#structures-and-unions).
 If _c_object_ is True, address of the actual C object is returned, not the address of its ctypes wrapper.
 
 # Utils
