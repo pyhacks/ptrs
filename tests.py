@@ -1,4 +1,4 @@
-from ptrs import *
+from pyptrs import *
 import ctypes
 
 
@@ -225,9 +225,24 @@ def test18():
     else:
         return False
     
-    
+
+def test19():
+    a = 1000
+    b = 2000
+    p1 = pointer_to_object(a)
+    p2 = pointer_to_object(b)
+    backup1 = dereference(p1, 3000)
+    backup2 = dereference(p2, 4000)
+    if a == 3000 and b == 4000:
+        mem_restore(backup1)
+        mem_restore(backup2)
+        if a == 1000 and b == 2000:
+            return True
+    return False
+
+
 if __name__ == "__main__":
-    if test1() and test2() and test3() and test4() and test5() and test6() and test7() and test8() and test9() and test10() and test11() and test12() and test13() and test14() and test16() and test17() and test18():
+    if test1() and test2() and test3() and test4() and test5() and test6() and test7() and test8() and test9() and test10() and test11() and test12() and test13() and test14() and test16() and test17() and test18() and test19():
         print("[+] all tests are successful")
     else:
         print("some tests are failed")

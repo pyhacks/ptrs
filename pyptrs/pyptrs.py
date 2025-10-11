@@ -193,21 +193,14 @@ def mem_restore(backup_id):
     global mem_backups
     global backup_counter    
     info = mem_backups[backup_id]
-    del mem_backups[backup_id]
-    backup_counter -= 1 
-    backup = info.pop()
-    memory_region = info.pop()
-    memory_region[:] = backup
+    info[0][:] = info[1]
 
 
 def mem_restore_last():
     global mem_backups
     global backup_counter
-    info = mem_backups.pop()
-    backup_counter -= 1
-    backup = info.pop()
-    memory_region = info.pop()
-    memory_region[:] = backup    
+    info = mem_backups[-1]
+    info[0][:] = info[1]  
     
     
 
